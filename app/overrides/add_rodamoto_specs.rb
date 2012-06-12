@@ -1,7 +1,7 @@
 Deface::Override.new(:virtual_path => "spree/admin/products/form",
                      :name => "add_rodamoto_specs",
                      :insert_bottom => "#shipping_specs",
-                     :text => %q{
+                     :text => "
        <ul id="rodamoto_specs">
         <li>
           <%= f.label :tire_speed_code_id, t(:speed_code) %>
