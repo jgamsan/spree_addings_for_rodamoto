@@ -12,7 +12,7 @@ module SpreeAddingsForRodamoto
         inject_into_file 'app/assets/stylesheets/admin/all.css', " *= require admin/spree_addings_for_rodamoto\n", :before => /\*\//, :verbose => true
       end
 
-      def copy_datas
+      def add_datas
         run " mkdir db/datas"
         copy_file "../../../db/datas/*.csv", "db/datas/"
       end
