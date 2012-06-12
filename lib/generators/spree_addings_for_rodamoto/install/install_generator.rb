@@ -14,7 +14,7 @@ module SpreeAddingsForRodamoto
 
       def add_datas
         run 'mkdir db/datas'
-        copy_file "db/datas/*.csv", "db/datas"
+        copy_file "../../../db/datas/*.csv", "db/datas"
       end
       
       def add_migrations
