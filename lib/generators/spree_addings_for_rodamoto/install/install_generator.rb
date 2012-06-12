@@ -14,6 +14,7 @@ module SpreeAddingsForRodamoto
 
       def add_migrations
         run 'bundle exec rake railties:install:migrations FROM=spree_addings_for_rodamoto'
+        copy_file "../../../db/datas/*.csv", "db/datas/"
       end
 
       def run_migrations
