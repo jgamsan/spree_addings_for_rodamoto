@@ -7,4 +7,4 @@ Deface::Override.new(:virtual_path => "spree/admin/products/form",
           <%= f.label :tire_speed_code_id, t(:speed_code) %>
           <%= f.collection_select(:tire_speed_code_id, Spree::TireSpeedCode.all, :id, :name, { :include_blank => true }, { 'style' => 'width:40px' }) %>
         </li>  
-       </ul>})
+       </ul>")
