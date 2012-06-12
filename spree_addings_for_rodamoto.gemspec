@@ -3,8 +3,8 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_addings_for_rodamoto'
   s.version     = '1.1.1'
-  s.summary     = 'TODO: Add gem summary here'
-  s.description = 'TODO: Add (optional) gem description here'
+  s.summary     = 'addings for rodamoto'
+  s.description = 'addings models for rodamoto'
   s.required_ruby_version = '>= 1.8.7'
 
   s.author    = 'Jose Miguel Gamazo'

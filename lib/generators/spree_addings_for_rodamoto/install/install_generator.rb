@@ -13,8 +13,8 @@ module SpreeAddingsForRodamoto
       end
 
       def add_datas
-        run " mkdir db/datas"
-        copy_file "../../../db/datas/*.csv", "db/datas/"
+        run " mkdir rodamoto/db/datas"
+        copy_file "spree_addings_for_rodamoto/db/datas/*.csv", "rodamoto/db/datas/"
       end
       
       def add_migrations
