@@ -14,13 +14,13 @@ module SpreeAddingsForRodamoto
 
       def add_datas
         run 'mkdir db/datas'
-        copy_file "anchos.csv", "db/datas"
-        copy_file "fr.csv", "db/datas"
-        copy_file "ics.csv", "db/datas"
-        copy_file "llantas.csv", "db/datas"
-        copy_file "perfiles.csv", "db/datas"
-        copy_file "tttl.csv", "db/datas"
-        copy_file "vel.csv", "db/datas"
+        copy_file "anchos.csv", "db/datas/anchos.csv"
+        copy_file "fr.csv", "db/datas/fr.csv"
+        copy_file "ics.csv", "db/datas/ics.csv"
+        copy_file "llantas.csv", "db/datas/llantas.csv"
+        copy_file "perfiles.csv", "db/datas/perfiles.csv"
+        copy_file "tttl.csv", "db/datas/tttl.csv"
+        copy_file "vel.csv", "db/datas/vel.csv"
       end
       
       def add_migrations
