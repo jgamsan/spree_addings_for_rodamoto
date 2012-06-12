@@ -1,7 +1,7 @@
 module SpreeAddingsForRodamoto
   module Generators
     class InstallGenerator < Rails::Generators::Base
-
+      source_root File.expand_path('../templates', __FILE__)
       def add_javascripts
         append_file 'app/assets/javascripts/store/all.js', "//= require store/spree_addings_for_rodamoto\n"
         append_file 'app/assets/javascripts/admin/all.js', "//= require admin/spree_addings_for_rodamoto\n"
@@ -14,7 +14,7 @@ module SpreeAddingsForRodamoto
 
       def add_datas
         run 'mkdir db/datas'
-        copy_file "../../../../db/datas/*.csv", "db/datas"
+        copy_file "*.csv", "db/datas"
       end
       
       def add_migrations
