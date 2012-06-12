@@ -12,8 +12,12 @@ module SpreeAddingsForRodamoto
         inject_into_file 'app/assets/stylesheets/admin/all.css', " *= require admin/spree_addings_for_rodamoto\n", :before => /\*\//, :verbose => true
       end
 
-      def add_migrations
+      def copy_datas
+        run " mkdir db/datas"
         copy_file "../../../db/datas/*.csv", "db/datas/"
+      end
+      
+      def add_migrations
         run 'bundle exec rake railties:install:migrations FROM=spree_addings_for_rodamoto'
       end
 
