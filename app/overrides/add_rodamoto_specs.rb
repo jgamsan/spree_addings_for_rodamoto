@@ -14,5 +14,24 @@ Deface::Override.new(:virtual_path => "spree/admin/products/_form",
         <li>
           <%= f.label :tire_profile_id, t(:profile) %>
           <%= f.collection_select(:tire_profile_id, Spree::TireProfile.all, :id, :name, { :include_blank => true }, { 'style' => 'width:40px' }) %>
-        </li>  
-       </ul>")
+        </li>
+        <li>
+          <%= f.label :tire_innertube_id, t(:innertube) %>
+          <%= f.collection_select(:tire_innertube_id, Spree::TireInnertube.all, :id, :name, { :include_blank => true }, { 'style' => 'width:40px' }) %>
+        </li>
+       </ul>
+       <ul>
+        <li>
+          <%= f.label :tire_fr_id, t(:fr) %>
+          <%= f.collection_select(:tire_fr_id, Spree::TireFr.all, :id, :name, { :include_blank => true }, { 'style' => 'width:40px' }) %>
+        </li>
+        <li>
+          <%= f.label :tire_ic_id, t(:ic) %>
+          <%= f.collection_select(:tire_ic_id, Spree::TireIc.all, :id, :name, { :include_blank => true }, { 'style' => 'width:40px' }) %>
+        </li>
+        <li>
+          <%= f.label :tire_tttl_id, t(:tttl) %>
+          <%= f.collection_select(:tire_tttl_id, Spree::TireTttl.all, :id, :name, { :include_blank => true }, { 'style' => 'width:40px' }) %>
+        </li>
+       </ul>
+       ")
