@@ -21,6 +21,7 @@ module SpreeAddingsForRodamoto
         copy_file "perfiles.csv", "db/datas/perfiles.csv"
         copy_file "tttl.csv", "db/datas/tttl.csv"
         copy_file "vel.csv", "db/datas/vel.csv"
+        copy_file "marcas.csv", "db/datas/marcas.csv"
       end
       
       def add_migrations
