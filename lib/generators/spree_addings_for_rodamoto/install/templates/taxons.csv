@@ -1,0 +1,22 @@
+1, "", Categorias, 1
+2, "", Marcas, 2
+3, 1, Motocicletas, 1
+4, 3, Neumaticos, 1
+5, 3, Camaras, 1
+6, 3, Mousse, 1
+7, 3, Tubliss, 1
+8, 3, Protector Llanta, 1
+9, 1, ATV/Quad, 1
+10, 9, Neumaticos, 1
+11, 9, Camaras, 1
+12, 1, Scooter, 1
+13, 12, Neumaticos, 1
+14, 12, Camaras, 1
+15, 1, Accesorios, 1
+16, 15, Aceites, 1
+17, 15, Baterias, 1
+18, 15, Desengrasantes, 1
+19, 15, Discos de Freno, 1
+20, 15, Pastillas de Freno, 1
+21, 15, Frenantes de Rueda, 1
+22, 15, Desmontables, 1
