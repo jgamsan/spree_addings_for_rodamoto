@@ -26,6 +26,7 @@ module Spree::Search
           else
           Array.new(values.size, "products.#{field} LIKE ?").join(' OR ')
         end
+      }.join(' OR ')
       base_scope.joins(:variants_including_master).where([where_str, values.map{|value| "%#{value}%"} * fields.size].flatten)
     end
   end
