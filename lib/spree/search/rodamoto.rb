@@ -1,5 +1,5 @@
 module Spree::Search
-  class Rodamoto < Spree::Search::Base
+  class Rodamoto < Spree::Core::Search::Base
     def get_products_conditions_for(base_scope, query)
       fields = [:name, :description, :sku, :tire_fr_id, :tire_speed_code_id, 
                 :tire_tttl_id, :tire_profile_id, :tire_ic_id, :tire_innertube_id, :tire_width_id]
