@@ -8,5 +8,17 @@
   <%= select_tag :tire_innertube_id, options_for_select([[t(:innertube), '']] +
                               Spree::TireInnertube.all.map {|t| [t.name, t.id]},
                             @innertube ? @innertube.id : params[:tire_innertube_id]) %>
+  <%= select_tag :tire_ic_id, options_for_select([[t(:ic), '']] +
+                            Spree::TireIc.all.map {|t| [t.name, t.id]},
+                          @ic ? @ic.id : params[:tire_ic_id]) %>
+  <%= select_tag :tire_speed_code_id, options_for_select([[t(:speed_code), '']] +
+                            Spree::TireSpeedCode.all.map {|t| [t.name, t.id]},
+                          @speed ? @speed.id : params[:tire_speed_code_id]) %>
+  <%= select_tag :tire_fr_id, options_for_select([[t(:fr), '']] +
+                            Spree::TireFr.all.map {|t| [t.name, t.id]},
+                          @fr ? @fr.id : params[:tire_fr_id]) %>
+  <%= select_tag :tire_tttl_id, options_for_select([[t(:tttl), '']] +
+                              Spree::TireTttl.all.map {|t| [t.name, t.id]},
+                            @tttl ? @tttl.id : params[:tire_tttl_id]) %>
   <%= submit_tag t(:search), :name => nil %>
 <% end -%>
