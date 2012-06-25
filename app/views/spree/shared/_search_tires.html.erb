@@ -1,0 +1,12 @@
+<%= form_tag products_path, :method => :get do -%>
+  <%= select_tag :tire_width_id, options_for_select([[t(:width), '']] +
+                            @widths.map {|t| [t.name, t.id]},
+                          @width ? @width.id : params[:tire_width_id]) %>
+  <%= select_tag :tire_profile_id, options_for_select([[t(:profile), '']] +
+                            @profiles.map {|t| [t.name, t.id]},
+                          @profile ? @profile.id : params[:tire_profile_id]) %>
+  <%= select_tag :tire_innertube_id, options_for_select([[t(:innertube), '']] +
+                              @innertubes.map {|t| [t.name, t.id]},
+                            @innertube ? @innertube.id : params[:tire_innertube_id]) %>
+  <%= submit_tag t(:search), :name => nil %>
+<% end -%>
