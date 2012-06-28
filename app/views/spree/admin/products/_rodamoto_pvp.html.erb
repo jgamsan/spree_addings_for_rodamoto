@@ -1,20 +1,18 @@
 <div class="left" data-hook="admin_product_form_pvp_left">
-  <ul id="pvp">
-    <li id="pvp3">
-      <%= f.label :pvp3, t(:pvp3) %>
-      <%= f.text_field :pvp3, :size => 4 %>
-    </li>
-    <li id="pvp7">
-      <%= f.label :pvp7, t(:pvp7) %>
-      <%= f.text_field :pvp7, :size => 4 %>
-    </li>
-    <li id="pvp9">
-      <%= f.label :pvp9, t(:pvp9) %>
-      <%= f.text_field :pvp9, :size => 4 %>
-    </li>
-    <li id="pvp12">
-      <%= f.label :pvp12, t(:pvp12) %>
-      <%= f.text_field :pvp12, :size => 4 %>
-    </li>
-  </ul>
+  <%= f.field_container :pvp3 do %>
+    <%= f.label :pvp3, t(:pvp3) %>
+    <%= f.text_field :pvp3, :size => 4 %>
+  <% end -%>  
+  <%= f.field_container :pvp7 do %>
+    <%= f.label :pvp7, t(:pvp7) %>
+    <%= f.text_field :pvp7, :size => 4 %>
+  <% end -%>
+  <%= f.field_container :pvp7 do %>
+    <%= f.label :pvp9, t(:pvp9) %>
+    <%= f.text_field :pvp9, :size => 4 %>
+  <% end -%>
+  <%= f.field_container :pvp9 do %>
+    <%= f.label :pvp12, t(:pvp12) %>
+    <%= f.text_field :pvp12, :size => 4 %>
+  <% end -%>
 </div>
