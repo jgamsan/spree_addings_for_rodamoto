@@ -6,7 +6,7 @@ class CreateSpreeTireIcs < ActiveRecord::Migration
       t.timestamps
     end
     file = "#{Rails.root}/db/datas/ics.csv"
-    CSV.foreach(file, :col_sep =>',') do |row|
+    CSV.foreach(file, :col_sep =>';') do |row|
       Spree::TireIc.create(:name => row[0])
     end 
   end
