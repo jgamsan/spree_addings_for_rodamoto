@@ -14,18 +14,22 @@
 12, Camaras,1
 1, Mini-Motos,1
 15, Neumaticos,1
+15, Camaras,1
 1, Remolques,1
-17, Neumaticos,1
+18, Neumaticos,1
+18, Camaras,1
 1, Bicicletas,1
-19, Neumaticos,1
-1, Karts,1
 21, Neumaticos,1
+21, Camaras,1
+1, Karts,1
+24, Neumaticos,1
+24, Camaras,1
 1, Otros,1
 1, Accesorios,1
-24, Aceites,1
-24, Baterias,1
-24, Desengrasantes,1
-24, Discos de Freno,1
-24, Pastillas de Freno,1
-24, Frenantes de Rueda,1
-24, Desmontables,1
+28, Aceites,1
+28, Baterias,1
+28, Desengrasantes,1
+28, Discos de Freno,1
+28, Pastillas de Freno,1
+28, Frenantes de Rueda,1
+28, Desmontables,1
