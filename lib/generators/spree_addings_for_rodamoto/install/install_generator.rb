@@ -23,6 +23,8 @@ module SpreeAddingsForRodamoto
         copy_file "vel.csv", "db/datas/vel.csv"
         copy_file "marcas.csv", "db/datas/marcas.csv"
         copy_file "taxons.csv", "db/datas/taxons.csv"
+        copy_file "zones.csv", "db/datas/zones.csv"
+        copy_file "zone_members.csv", "db/datas/zone_members.csv"
       end
       
       def add_migrations
